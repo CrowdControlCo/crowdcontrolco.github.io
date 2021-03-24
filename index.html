@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<style>
+    body{
+        overflow: hidden;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-color: red;
+    }
+
+    #album{
+        margin: 5% auto;
+        width: 600px;
+        height: 500px;
+    }
+
+    #album .turn-page{
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="album">
+        <div style="background-image: url(6.jpg);"></div>
+        <div style="background-image: url(flags.jpg);"></div>
+        
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+        $('#album').turn({gradients: true, acceleration: true});
+    </script>
+</body>
+</html>
